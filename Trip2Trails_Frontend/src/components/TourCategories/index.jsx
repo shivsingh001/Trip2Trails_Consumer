@@ -47,6 +47,7 @@ export default function TourCategories() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const visibleCount = 3
   const maxIndex = Math.max(0, sortedCategories.length - visibleCount)
+  const visibleCategories = sortedCategories.slice(currentIndex, currentIndex + visibleCount)
 
   const handlePrev = () => {
     setCurrentIndex(prev => Math.max(0, prev - 1))
@@ -76,11 +77,8 @@ export default function TourCategories() {
           </button>
 
           <div className={styles.carouselContainer}>
-            <div 
-              className={styles.carouselTrack}
-              style={{ transform: `translateX(-${currentIndex * (100 / visibleCount)}%)` }}
-            >
-              {sortedCategories.map((cat) => (
+            <div className={styles.carouselTrack}>
+              {visibleCategories.map((cat) => (
                 <div key={cat.title} className={styles.carouselItem}>
                   <CategoryCard {...cat} />
                 </div>
