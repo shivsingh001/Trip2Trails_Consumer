@@ -1,0 +1,133 @@
+/**
+ * Tour / brochure card data.
+ *
+ * tag:   used by the filter tabs in MostPopularTours.
+ * badge: optional pill label on the card image (null = no badge).
+ */
+const tours = [
+  {
+    title: 'Kasol Kheerganga Trek',
+    route: 'Delhi → Delhi',
+    duration: '2N-3D',
+    price: '₹6,500',
+    dates: '29 May, 5 Jun, 12 Jun…',
+    badge: 'Bestseller',
+    tag: 'Trek',
+    img: 'https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&q=80',
+  },
+  {
+    title: 'Tirthan Valley & Jibhi',
+    route: 'Delhi → Delhi',
+    duration: '2N-3D',
+    price: '₹6,500',
+    dates: '29 May, 5 Jun, 12 Jun…',
+    badge: 'Popular',
+    tag: 'Valley',
+    img: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80',
+  },
+  {
+    title: 'Chakrata Weekend Trip',
+    route: 'Delhi → Delhi',
+    duration: '1N-2D',
+    price: '₹4,500',
+    dates: '29 May, 5 Jun, 12 Jun…',
+    badge: null,
+    tag: 'Weekend',
+    img: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80',
+  },
+  {
+    title: 'Triund Trek & Mcleodganj',
+    route: 'Delhi → Delhi',
+    duration: '2N-3D',
+    price: '₹6,500',
+    dates: '29 May, 5 Jun, 12 Jun…',
+    badge: null,
+    tag: 'Trek',
+    img: 'https://images.unsplash.com/photo-1605640840605-14ac1855827b?w=600&q=80',
+  },
+  {
+    title: 'Bir Billing Paragliding',
+    route: 'Delhi → Delhi',
+    duration: '1N-2D',
+    price: '₹8,500',
+    dates: '29 May, 5 Jun, 12 Jun…',
+    badge: 'Adventure',
+    tag: 'Adventure',
+    img: 'https://images.unsplash.com/photo-1530866226785-b84c2f4e7b24?w=600&q=80',
+  },
+  {
+    title: 'Spiti Valley Expedition',
+    route: 'Delhi → Delhi',
+    duration: '6N-7D',
+    price: '₹15,500',
+    dates: '30 May',
+    badge: 'Trending',
+    tag: 'Expedition',
+    img: 'https://images.unsplash.com/photo-1585016495481-8c342cf70c6f?w=600&q=80',
+  },
+  {
+    title: 'Kedarnath Tour Package',
+    route: 'Delhi → Delhi',
+    duration: '3N-4D',
+    price: '₹9,999',
+    dates: '29 May, 5 Jun, 12 Jun…',
+    badge: 'Spiritual',
+    tag: 'Pilgrimage',
+    img: 'https://images.unsplash.com/photo-1575368359952-4b8ac6e2b960?w=600&q=80',
+  },
+  {
+    title: 'Kinnaur Valley – Chitkul',
+    route: 'Delhi → Delhi',
+    duration: '3N-4D',
+    price: '₹10,500',
+    dates: '29 May, 5 Jun, 12 Jun…',
+    badge: null,
+    tag: 'Valley',
+    img: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=80',
+  },
+  {
+    title: 'Shangarh Sainj Valley',
+    route: 'Delhi → Delhi',
+    duration: '2N-3D',
+    price: '₹7,500',
+    dates: '29 May, 5 Jun, 12 Jun…',
+    badge: null,
+    tag: 'Weekend',
+    img: 'https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80',
+  },
+  {
+    title: 'Spiti Circuit Backpacking',
+    route: 'Delhi → Delhi',
+    duration: '6N-7D',
+    price: '₹17,500',
+    dates: '30 May, 6 Jun, 13 Jun…',
+    badge: 'Trending',
+    tag: 'Backpacking',
+    img: 'https://images.unsplash.com/photo-1561731216-c3a4d99437d5?w=600&q=80',
+  },
+  {
+    title: 'Valley of Flowers Trek',
+    route: 'Rishikesh → Rishikesh',
+    duration: '5N-6D',
+    price: '₹8,500',
+    dates: '6 Jun, 13 Jun, 20 Jun…',
+    badge: 'UNESCO',
+    tag: 'Trek',
+    img: 'https://images.unsplash.com/photo-1609766857289-0a1c14c18f88?w=600&q=80',
+  },
+  {
+    title: 'Chardham Yatra Package',
+    route: 'Delhi → Delhi',
+    duration: '8N-9D',
+    price: '₹23,000',
+    dates: '30 May, 6 Jun, 13 Jun…',
+    badge: 'Premium',
+    tag: 'Pilgrimage',
+    img: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=600&q=80',
+  },
+]
+
+/** All unique tag values for filter tabs. */
+export const TOUR_FILTERS = ['All', 'Trek', 'Weekend', 'Expedition', 'Valley', 'Adventure', 'Pilgrimage', 'Backpacking']
+
+export default tours

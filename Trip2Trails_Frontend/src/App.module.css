@@ -1,0 +1,23 @@
+/* App.module.css — only App-level styles (the WhatsApp float button) */
+.whatsappFloat {
+  position: fixed;
+  bottom: 1.8rem;
+  right: 1.8rem;
+  z-index: 999;
+  width: 54px;
+  height: 54px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.6rem;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45);
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.whatsappFloat:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 28px rgba(37, 211, 102, 0.6);
+}

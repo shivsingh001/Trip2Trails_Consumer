@@ -1,0 +1,43 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.icon {
+  font-size: 1.6rem;
+}
+
+.image {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.wordmark {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  font-style: normal;
+}
+
+.wordmark em {
+  font-style: normal;
+  color: #f97316;
+}
+
+.light .icon {
+  color: #f97316;
+}
+.light .wordmark {
+  color: #fff;
+}
+
+.dark .icon {
+  color: #f97316;
+}
+.dark .wordmark {
+  color: #fff;
+}
