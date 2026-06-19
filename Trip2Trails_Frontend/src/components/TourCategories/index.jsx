@@ -5,7 +5,7 @@ import styles from './TourCategories.module.css'
 
 /* ── Sub-component: single category card ──────── */
 function CategoryCard({ title, img, icon, itinerary }) {
-  const isComingSoon = title !== 'Weekend Trips'
+  const isComingSoon = !itinerary
   
   return (
     <div className={styles.card}>
