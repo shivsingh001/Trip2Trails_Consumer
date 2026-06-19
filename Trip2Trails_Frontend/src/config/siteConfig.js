@@ -8,8 +8,8 @@ export const SITE_CONFIG = {
   contact: {
     phoneE164: '+917982312508',
     phoneDisplay: '+91 79823 12508',
-    email: 'info@trip2trails.com',
-    address: '33 Plot No, FC-8, Jasola Vihar, New Delhi - 110025',
+    email: 'Trip2Trails@gmail.com',
+    address: 'sector 62 noida uttarpradesh',
   },
   links: {
     whatsappGroup: 'https://chat.whatsapp.com/EycioEJGGrHHDBECqqzm0c',
