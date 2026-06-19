@@ -41,9 +41,12 @@ function CategoryCard({ title, img, icon, itinerary }) {
 
 /* ── Main component ────────────────────────────── */
 export default function TourCategories() {
+  const sortedCategories = [...categories].sort(
+    (left, right) => Number(Boolean(right.itinerary)) - Number(Boolean(left.itinerary))
+  )
   const [currentIndex, setCurrentIndex] = useState(0)
   const visibleCount = 3
-  const maxIndex = Math.max(0, categories.length - visibleCount)
+  const maxIndex = Math.max(0, sortedCategories.length - visibleCount)
 
   const handlePrev = () => {
     setCurrentIndex(prev => Math.max(0, prev - 1))
@@ -77,7 +80,7 @@ export default function TourCategories() {
               className={styles.carouselTrack}
               style={{ transform: `translateX(-${currentIndex * (100 / visibleCount)}%)` }}
             >
-              {categories.map((cat) => (
+              {sortedCategories.map((cat) => (
                 <div key={cat.title} className={styles.carouselItem}>
                   <CategoryCard {...cat} />
                 </div>
